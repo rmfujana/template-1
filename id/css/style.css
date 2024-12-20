@@ -34,6 +34,18 @@ body, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 /*** Spinner End ***/
 
+.lang {
+    .btn {
+        border: 1px solid transparent;
+        color: var(--bs-light);
+        &.active {
+            background-color: #0d6efd;
+            color: white;
+            border-color: #0d6efd;
+        }
+    }
+}
+
 .back-to-top {
     position: fixed;
     right: 30px;
@@ -115,6 +127,17 @@ body, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     font-weight: 400;
     outline: none;
     transition: .5s;
+}
+
+.sticky-top {
+    .lang {
+        .btn {
+            color: var(--bs-dark);
+            &.active {
+                color: var(--bs-light);
+            }
+        }
+    }
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
