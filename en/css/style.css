@@ -140,6 +140,12 @@ body, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     }
 }
 
+.img-product {
+    height: 300px;
+    object-fit: cover; /* Ensures the image fills the dimensions without distortion */
+    border-radius: 8px; /* Optional: to maintain the rounded-top effect */
+}
+
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
     color: var(--bs-dark);
