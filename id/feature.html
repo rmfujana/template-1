@@ -46,6 +46,11 @@
                     <!-- <h1 class="text-primary"><i class="fas fa-hand-holding-water me-3"></i>LLS</h1> -->
                     <img src="logo.png" alt="Logo">
                 </a>
+                <!-- Language buttons (visible only on mobile) -->
+                <div class="d-flex align-items-center ms-auto lang d-flex d-lg-none">
+                    <a href="/id" class="btn btn-outline-primary btn-sm active">ID</a>
+                    <a href="/en" class="btn btn-outline-primary btn-sm">EN</a>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
@@ -54,7 +59,6 @@
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="product.html" class="nav-item nav-link">Product</a>
-                        <!-- <a href="blog.html" class="nav-item nav-link">Blog</a>  -->
                         <div class="nav-item dropdown active">
                             <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
@@ -71,7 +75,7 @@
                         <a href="/id/feature.html" class="btn btn-outline-primary btn-sm active">ID</a>
                         <a href="/en/feature.html" class="btn btn-outline-primary btn-sm">EN</a>
                     </div>
-                    <a href="" class="btn btn-secondary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4 whatsapp-button" data-product="produk tersedia">Order Now</a>
+                    <a href="" class="btn btn-secondary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4 whatsapp-button" data-product="produk tersedia">Pesan Sekarang</a>
                 </div>
             </nav>
 
@@ -80,7 +84,7 @@
                 <div class="container text-center py-5" style="max-width: 900px;">
                     <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Features</h4>
                     <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
                         <li class="breadcrumb-item active text-primary">Feature</li>
                     </ol>    
                 </div>
@@ -108,44 +112,48 @@
         </div>
         <!-- Modal Search End -->
 
-        <!-- feature Start -->
-        <div class="container-fluid feature bg-light py-5">
+         <!-- feature Start -->
+         <div class="counter container-fluid feature bg-light py-5">
             <div class="container py-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-uppercase text-primary">Our Feature</h4>
-                    <h1 class="display-3 text-capitalize mb-3">A Trusted Name In Bottled Seeds Industry</h1>
+                    <h4 class="text-uppercase text-primary">Fitur Kami</h4>
+                    <h1 class="display-3 text-capitalize mb-3 text-white">Nilai Levotama</h1>
                 </div>
                 <div class="row g-4">
-                    <div class=" col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="feature-item p-4">
-                            <div class="feature-icon mb-3"><i class="fas fa-hand-holding-water text-white fa-3x"></i></div>
-                            <a href="#" class="h4 mb-3">Quality Check</a>
-                            <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero repellat deleniti necessitatibus</p>
-                            <!-- <a href="#" class="btn text-secondary">Read More <i class="fa fa-angle-right"></i></a> -->
+                            <div class="feature-icon mb-3"><i class="fas fa-handshake text-white fa-3x"></i></div>
+                            <a href="#" class="h4 mb-3">Integritas dan Etika</a>
+                            <p class="mb-3">
+                                Menjunjung tinggi kejujuran, transparansi, dan prinsip moral dalam setiap tindakan dan keputusan, membangun kepercayaan dan akuntabilitas.
+                            </p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="feature-item p-4">
-                            <div class="feature-icon mb-3"><i class="fas fa-filter text-white fa-3x"></i></div>
-                            <a href="#" class="h4 mb-3">5 Steps Filtration</a>
-                            <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero repellat deleniti necessitatibus</p>
-                            <!-- <a href="#" class="btn text-secondary">Read More <i class="fa fa-angle-right"></i></a> -->
+                            <div class="feature-icon mb-3"><i class="fas fa-feather text-white fa-3x"></i></div>
+                            <a href="#" class="h4 mb-3">Kerendahan Hati</a>
+                            <p class="mb-3">
+                                Mengadopsi sikap rendah hati dan saling menghormati, menghargai kontribusi orang lain, serta memahami bahwa pertumbuhan berasal dari pembelajaran dan kolaborasi.
+                            </p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="feature-item p-4">
-                            <div class="feature-icon mb-3"><i class="fas fa-recycle text-white fa-3x"></i></div>
-                            <a href="#" class="h4 mb-3">Composition</a>
-                            <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero repellat deleniti necessitatibus</p>
-                            <!-- <a href="#" class="btn text-secondary">Read More <i class="fa fa-angle-right"></i></a> -->
+                            <div class="feature-icon mb-3"><i class="fas fa-dove text-white fa-3x"></i></div>
+                            <a href="#" class="h4 mb-3">Kepedulian</a>
+                            <p class="mb-3">
+                                Menunjukkan empati, kebaikan, dan kepedulian yang tulus terhadap kesejahteraan orang lain, menciptakan rasa keterhubungan dan kasih sayang.
+                            </p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
                         <div class="feature-item p-4">
-                            <div class="feature-icon mb-3"><i class="fas fa-microscope text-white fa-3x"></i></div>
-                            <a href="#" class="h4 mb-3">Lab Control</a>
-                            <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero repellat deleniti necessitatibus</p>
-                            <!-- <a href="#" class="btn text-secondary">Read More <i class="fa fa-angle-right"></i></a> -->
+                            <div class="feature-icon mb-3"><i class="fas fa-award text-white fa-3x"></i></div>
+                            <a href="#" class="h4 mb-3">Keunggulan</a>
+                            <p class="mb-3">
+                                Berusaha mencapai kualitas tertinggi dalam setiap upaya, secara konsisten melebihi ekspektasi, dan berkomitmen terhadap peningkatan berkelanjutan.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -160,41 +168,39 @@
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
                             <div class="footer-item">
-                                <!-- <h3 class="text-white mb-4"><i class="fas fa-hand-holding-water text-primary me-3"></i>LLS</h3> -->
                                 <img src="logo.png" alt="Logo">
                             </div>
-                            
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
-                            <h4 class="text-white mb-4">About Us</h4>
-                            <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
-                            <a href="product.html"><i class="fas fa-angle-right me-2"></i> Our Products</a>
-                            <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Reach Us Out!</a>
+                            <h4 class="text-white mb-4">Tentang Kami</h4>
+                            <a href="about.html"><i class="fas fa-angle-right me-2"></i> Tentang Kami</a>
+                            <a href="product.html"><i class="fas fa-angle-right me-2"></i> Produk Kami</a>
+                            <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Hubungi Kami!</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
-                            <h4 class="text-white mb-4">Business Hours</h4>
+                            <h4 class="text-white mb-4">Jam Operasional</h4>
                             <div class="mb-3">
-                                <h6 class="text-muted mb-0">Mon - Friday:</h6>
-                                <p class="text-white mb-0">09.00 am to 07.00 pm</p>
+                                <h6 class="text-muted mb-0">Senin - Jumat:</h6>
+                                <p class="text-white mb-0">09.00 pagi - 07.00 malam</p>
                             </div>
                             <div class="mb-3">
-                                <h6 class="text-muted mb-0">Saturday:</h6>
-                                <p class="text-white mb-0">10.00 am to 05.00 pm</p>
+                                <h6 class="text-muted mb-0">Sabtu:</h6>
+                                <p class="text-white mb-0">10.00 pagi - 05.00 sore</p>
                             </div>
                             <div class="mb-3">
-                                <h6 class="text-muted mb-0">Vacation:</h6>
-                                <p class="text-white mb-0">All Sunday is our vacation</p>
+                                <h6 class="text-muted mb-0">Libur:</h6>
+                                <p class="text-white mb-0">Minggu adalah hari libur kami</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
-                            <h4 class="text-white mb-4">Contact Info</h4>
-                            <a href="#"><i class="fa fa-map-marker-alt me-2"></i> Jl. BSD Barat Raya, Ruko Icon Busines Park B-11, Banten</a>
+                            <h4 class="text-white mb-4">Info Kontak</h4>
+                            <a href="#"><i class="fa fa-map-marker-alt me-2"></i> Jl. BSD Barat Raya, Ruko Icon Business Park B-11, Banten</a>
                             <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> info@example.com</a>
                             <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> info@example.com</a>
                             <a href="tel:+012 345 67890"><i class="fas fa-phone me-2"></i> +012 345 67890</a>
@@ -203,7 +209,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
         <!-- Footer End -->
         
         <!-- Copyright Start -->

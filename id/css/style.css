@@ -44,6 +44,13 @@ body, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
             border-color: #0d6efd;
         }
     }
+
+    @media screen and (max-width: 991px) {
+        margin-right: 16px;
+        .btn {
+            color: var(--bs-dark);
+        }
+    }
 }
 
 .back-to-top {
@@ -138,6 +145,12 @@ body, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
             }
         }
     }
+}
+
+.img-product {
+    height: 300px;
+    object-fit: cover; /* Ensures the image fills the dimensions without distortion */
+    border-radius: 8px; /* Optional: to maintain the rounded-top effect */
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
@@ -454,7 +467,7 @@ body, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .bg-breadcrumb {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(0, 20, 66, 0.7), rgba(0, 20, 66, 0.7)), url('');
+    background: linear-gradient(rgba(0, 20, 66, 0.7), rgba(0, 20, 66, 0.7)), url('../../img/img-banner.jpg');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -487,6 +500,7 @@ body, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     background: var(--bs-white);
     border-radius: 10px;
     transition: 0.5s;
+    height: 100%;
 }
 
 .feature .feature-item:hover {
@@ -671,6 +685,18 @@ body, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .product .product-item {
     border: 1px solid rgba(196, 211, 211, 0.9);
     border-radius: 10px;
+}
+
+.product-content {
+    padding: 16px 0 0 0 !important;
+
+    .h4 {
+        margin-bottom: 36px !important;
+    }
+
+    .btn {
+        border-radius: 0 0 9px 9px !important;
+    }
 }
 
 /*** Products End ***/

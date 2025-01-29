@@ -46,32 +46,36 @@
                     <!-- <h1 class="text-primary"><i class="fas fa-hand-holding-water me-3"></i>LLS</h1> -->
                     <img src="logo.png" alt="Logo">
                 </a>
+                <!-- Language buttons (visible only on mobile) -->
+                <div class="d-flex align-items-center ms-auto lang d-flex d-lg-none">
+                    <a href="/id" class="btn btn-outline-primary btn-sm active">ID</a>
+                    <a href="/en" class="btn btn-outline-primary btn-sm">EN</a>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 me-5">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="product.html" class="nav-item nav-link">Product</a>
-                        <!-- <a href="blog.html" class="nav-item nav-link">Blog</a>  -->
-                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                        <a href="index.html" class="nav-item nav-link">Beranda</a>
+                        <a href="about.html" class="nav-item nav-link">Tentang</a>
+                        <a href="product.html" class="nav-item nav-link">Produk</a>
+                        <a href="contact.html" class="nav-item nav-link active">Kontak</a>
                     </div>
-                    <div class="d-flex align-items-center me-3 lang">
+                    <div class="d-flex align-items-center me-3 lang d-none d-flex d-lg-flex">
                         <a href="/id/contact.html" class="btn btn-outline-primary btn-sm active">ID</a>
                         <a href="/en/contact.html" class="btn btn-outline-primary btn-sm">EN</a>
                     </div>
-                    <a href="" class="btn btn-secondary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4 whatsapp-button" data-product="produk tersedia">Order Now</a>
+                    <a href="" class="btn btn-secondary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4 whatsapp-button" data-product="produk tersedia">Pesan Sekarang</a>
                 </div>
             </nav>
 
             <!-- Header Start -->
             <div class="container-fluid bg-breadcrumb">
                 <div class="container text-center py-5" style="max-width: 900px;">
-                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contact Us</h4>
+                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Kontak Kami</h4>
                     <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active text-primary">Contact</li>
+                        <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+                        <li class="breadcrumb-item active text-primary">Kontak</li>
                     </ol>    
                 </div>
             </div>
@@ -103,12 +107,22 @@
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="row g-4">
+                        <!-- Select Dropdown -->
+                        <div class="mb-4">
+                            <select id="office-select" class="form-select form-select-lg p-3">
+                                <option value="main-office" selected>Main Office</option>
+                                <option value="branch-office-bogor">Branch Office - Bogor</option>
+                                <option value="branch-office-kediri">Branch Office - Kediri</option>
+                            </select>
+                            <br/>
+                            <br/>
+                        </div>
+                        <div class="row g-4 main-office">
                             <div class="col-12">
                                 <div class="d-inline-flex rounded bg-white w-100 p-4">
                                     <i class="fas fa-map-marker-alt fa-2x text-secondary me-4"></i>
                                     <div>
-                                        <h4>Address</h4>
+                                        <h4>Alamat</h4>
                                         <p class="mb-0">Jl. BSD Barat Raya, Ruko Icon Busines Park B-11, S, Sampora, Kec. Cisauk, Kabupaten Tangerang, Banten 15345</p>
                                     </div>
                                 </div>
@@ -117,7 +131,7 @@
                                 <div class="d-inline-flex rounded bg-white w-100 p-4">
                                     <i class="fas fa-envelope fa-2x text-secondary me-4"></i>
                                     <div>
-                                        <h4>Mail Us</h4>
+                                        <h4>Email Kami</h4>
                                         <p class="mb-0">info@example.com</p>
                                     </div>
                                 </div>
@@ -126,15 +140,100 @@
                                 <div class="d-inline-flex rounded bg-white w-100 p-4">
                                     <i class="fa fa-phone-alt fa-2x text-secondary me-4"></i>
                                     <div>
-                                        <h4>Telephone</h4>
+                                        <h4>Telepon</h4>
                                         <p class="mb-0">(+012) 3456 7890 123</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="h-100 overflow-hidden">
-                                    <iframe class="w-100 rounded" style="height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1694259649153!5m2!1sen!2sbd" 
-                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe 
+                                        class="w-100 rounded" 
+                                        style="height: 400px;" 
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.8063857313975!2d106.64929454810198!3d-6.3144909943415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e5a026d52189%3A0x9314eea3de346910!2sPT%20Levotama%20Langgeng%20Sejahtera!5e0!3m2!1sen!2sid!4v1736067393383!5m2!1sen!2sid" 
+                                        loading="lazy" 
+                                        referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4 branch-office-bogor d-none">
+                            <div class="col-12">
+                                <div class="d-inline-flex rounded bg-white w-100 p-4">
+                                    <i class="fas fa-map-marker-alt fa-2x text-secondary me-4"></i>
+                                    <div>
+                                        <h4>Alamat</h4>
+                                        <p class="mb-0">Bogor, West Java</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-6">
+                                <div class="d-inline-flex rounded bg-white w-100 p-4">
+                                    <i class="fas fa-envelope fa-2x text-secondary me-4"></i>
+                                    <div>
+                                        <h4>Email Kami</h4>
+                                        <p class="mb-0">info@example.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-6">
+                                <div class="d-inline-flex rounded bg-white w-100 p-4">
+                                    <i class="fa fa-phone-alt fa-2x text-secondary me-4"></i>
+                                    <div>
+                                        <h4>Telepon</h4>
+                                        <p class="mb-0">(+012) 3456 7890 123</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="h-100 overflow-hidden">
+                                    <iframe 
+                                        class="w-100 rounded" 
+                                        style="height: 400px;" 
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126829.29180927215!2d106.7094908585691!3d-6.595186739549235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5b7ad0f824b%3A0x4c71fd1b0b8ae76d!2sBogor%20City%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1736067573813!5m2!1sen!2sid" 
+                                        loading="lazy" 
+                                        referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4 branch-office-kediri d-none">
+                            <div class="col-12">
+                                <div class="d-inline-flex rounded bg-white w-100 p-4">
+                                    <i class="fas fa-map-marker-alt fa-2x text-secondary me-4"></i>
+                                    <div>
+                                        <h4>Alamat</h4>
+                                        <p class="mb-0">Kediri, East Java</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-6">
+                                <div class="d-inline-flex rounded bg-white w-100 p-4">
+                                    <i class="fas fa-envelope fa-2x text-secondary me-4"></i>
+                                    <div>
+                                        <h4>Email Kami</h4>
+                                        <p class="mb-0">info@example.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-6">
+                                <div class="d-inline-flex rounded bg-white w-100 p-4">
+                                    <i class="fa fa-phone-alt fa-2x text-secondary me-4"></i>
+                                    <div>
+                                        <h4>Telepon</h4>
+                                        <p class="mb-0">(+012) 3456 7890 123</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="h-100 overflow-hidden">
+                                    <iframe 
+                                        class="w-100 rounded" 
+                                        style="height: 400px;" 
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63240.03048476278!2d111.97498790543176!3d-7.842420097724173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78570dfd6e0647%3A0x25037b968333d9b2!2sKediri%2C%20Kediri%20Regency%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1736067786503!5m2!1sen!2sid" 
+                                        loading="lazy" 
+                                        referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
                                 </div>
                             </div>
                         </div>
@@ -144,48 +243,46 @@
         </div>
         <!-- Contact End -->
 
-        <!-- Footer Start -->
-        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+         <!-- Footer Start -->
+         <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
                             <div class="footer-item">
-                                <!-- <h3 class="text-white mb-4"><i class="fas fa-hand-holding-water text-primary me-3"></i>LLS</h3> -->
                                 <img src="logo.png" alt="Logo">
                             </div>
-                            
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
-                            <h4 class="text-white mb-4">About Us</h4>
-                            <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
-                            <a href="product.html"><i class="fas fa-angle-right me-2"></i> Our Products</a>
-                            <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Reach Us Out!</a>
+                            <h4 class="text-white mb-4">Tentang Kami</h4>
+                            <a href="about.html"><i class="fas fa-angle-right me-2"></i> Tentang Kami</a>
+                            <a href="product.html"><i class="fas fa-angle-right me-2"></i> Produk Kami</a>
+                            <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Hubungi Kami!</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
-                            <h4 class="text-white mb-4">Business Hours</h4>
+                            <h4 class="text-white mb-4">Jam Operasional</h4>
                             <div class="mb-3">
-                                <h6 class="text-muted mb-0">Mon - Friday:</h6>
-                                <p class="text-white mb-0">09.00 am to 07.00 pm</p>
+                                <h6 class="text-muted mb-0">Senin - Jumat:</h6>
+                                <p class="text-white mb-0">09.00 pagi - 07.00 malam</p>
                             </div>
                             <div class="mb-3">
-                                <h6 class="text-muted mb-0">Saturday:</h6>
-                                <p class="text-white mb-0">10.00 am to 05.00 pm</p>
+                                <h6 class="text-muted mb-0">Sabtu:</h6>
+                                <p class="text-white mb-0">10.00 pagi - 05.00 sore</p>
                             </div>
                             <div class="mb-3">
-                                <h6 class="text-muted mb-0">Vacation:</h6>
-                                <p class="text-white mb-0">All Sunday is our vacation</p>
+                                <h6 class="text-muted mb-0">Libur:</h6>
+                                <p class="text-white mb-0">Minggu adalah hari libur kami</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
-                            <h4 class="text-white mb-4">Contact Info</h4>
-                            <a href="#"><i class="fa fa-map-marker-alt me-2"></i> Jl. BSD Barat Raya, Ruko Icon Busines Park B-11, Banten</a>
+                            <h4 class="text-white mb-4">Info Kontak</h4>
+                            <a href="#"><i class="fa fa-map-marker-alt me-2"></i> Jl. BSD Barat Raya, Ruko Icon Business Park B-11, Banten</a>
                             <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> info@example.com</a>
                             <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> info@example.com</a>
                             <a href="tel:+012 345 67890"><i class="fas fa-phone me-2"></i> +012 345 67890</a>
@@ -194,7 +291,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
         <!-- Footer End -->
         
         <!-- Copyright Start -->
@@ -221,6 +318,14 @@
         <!-- Back to Top -->
         <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
 
+        <script>
+            document.getElementById('office-select').addEventListener('change', function () {
+                const selectedOffice = this.value;
+                document.querySelector('.main-office').classList.toggle('d-none', selectedOffice !== 'main-office');
+                document.querySelector('.branch-office-bogor').classList.toggle('d-none', selectedOffice !== 'branch-office-bogor');
+                document.querySelector('.branch-office-kediri').classList.toggle('d-none', selectedOffice !== 'branch-office-kediri');
+            });
+        </script>
         
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
