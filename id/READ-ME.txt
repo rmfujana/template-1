@@ -1,4 +1,4 @@
-  =>  Template Name    : LLS - Website Template
+  =>  Template Name    : LLS - Levotama Langgeng Sejahtera
 
   =>  Template Link    : https://htmlcodex.com/drinking-water-website-template
 
@@ -7,3 +7,5 @@
   =>  Template Author  : HTML Codex
 
   =>  Author Website   : https://htmlcodex.com
+
+  =>  Customized By   : jesuiszhe

@@ -1,4 +1,4 @@
-  =>  Template Name    : LLS - Website Template
+  =>  Template Name    : LLS
 
   =>  Template Link    : https://htmlcodex.com/drinking-water-website-template
 
